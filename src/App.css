@@ -16,6 +16,7 @@ header {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
     position: fixed;
     z-index: 3;
+
     
 }
 
@@ -49,19 +50,22 @@ nav li :hover {
     color: #ffffff;
     background-color: #21325E;
     border-radius: 50px;
-    padding: 8px 20px;
+    padding: 8px 30px;
 }
+
+
 
 .nav-links a{
     
     font-weight: bold;
     color: #21325E;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 30px;
+    font-size: 22px;
 }
 .logo {
     cursor: pointer;
-    padding-top: 4px;
+    padding: 10px 0px 4px 0;
 }
 
 .nav-menu {
@@ -69,26 +73,44 @@ nav li :hover {
     display: flex;
 }
 
+.contact-me a{
+    background-color: #21325E;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+    padding: 8px 20px;
+    margin-left: 30px;
+}
+.contact-me a:hover{
+    background-color: #ffffff;
+    color: #21325E;
+    font-weight: bold;
+}
 
 /* this is for footer*/
 footer {
     background-color: #21325E;
     color: #ffffff;
-    position: relative;
-    bottom: 0;
     display: flex;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
     margin-top: 30px;
+    padding: 10px;
    
 }
 
 .container-footer {
     padding: 0px 20px;
 }
+
+.container-footer img{
+    vertical-align: middle;
+}
+
 .copyright {
-    font-size: 12px;
-    padding: 0 20px 0 0;
+    font-size: 14px;
     position: relative;
+    justify-content: center;
+    top: 25%;
+    padding: 0 20px 0 ;
 }
