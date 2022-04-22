@@ -3,45 +3,49 @@ import About from "./components/About";
 import Contact from './components/Contact';
 import Hobby from './components/Hobby';
 import Skills from './components/Skills';
-import Home from './components/Home'
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './components/Home';
+import logoHeader from './image/logo.png'
+import logoFooter from './image/logo-footer.jpg'
+import { BrowserRouter as Router, Routes,  Route} from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <nav>
-      THIS IS A TEMPLATE
-      </nav>
+      <header className="header">
+        <nav className="navbar">
+        <div class="logo" id="logo" >
+                <a href='/'><img src={logoHeader} alt="logoweb" height="33" href="/"/></a>
+            </div>
+            <ul className="nav-menu" id="nav-menu">
+                <li className="nav-links"><a href="/about">About</a></li>
+                <li className="nav-links"><a href="/contact">Contact</a></li>
+                <li className="nav-links"><a href="/skills">Skills</a></li>
+                <li className="nav-links">
+                    <a  href="/hobby">Hobby</a>
+                </li>
+            </ul>
+            <div className="menu-toggle" id="menu-toggle">
+                <div className="toggle-line"></div>
+                <div className="toggle-line"></div>
+                <div className="toggle-line"></div>
+            </div>
+        </nav>
+    </header>
       <Router>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/about" element={<About/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
-          <Route exact path="/skill" element={<Skills/>}/>
+          <Route exact path="/skills" element={<Skills/>}/>
           <Route exact path="/hobby" element={<Hobby/>}/>
         </Routes>
       </Router>
-      {/* <Router> this is main
-        <div>
-          <Routes>
-              <Route path="/">
-                <Home />
-              </Route>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/contact">
-                <Contact />
-              </Route>
-              <Route path="/hobby">
-                <Hobby />
-              </Route>
-              <Route path="/skill">
-                <Skills />
-              </Route>
-          </Routes>
+      <footer className="footer">
+        <div className="container-footer">
+            <img src={logoFooter} alt="logo-footer" height="35" />
         </div>
-      </Router> */}
+        <p className="copyright">©2022 Bagus Nurhuda All rights reserved</p>
+    </footer>
     </div>
     
   );
