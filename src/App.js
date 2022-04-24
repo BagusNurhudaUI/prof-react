@@ -1,6 +1,6 @@
 import './App.css';
 import About from "./components/about/About";
-import Contact from './components/Contact';
+import Experience from './components/experience/Experience';
 import Hobby from './components/Hobby';
 import Skills from './components/Skills';
 import Home from './components/home/Home';
@@ -17,12 +17,10 @@ function App() {
                 <a href='/'><img src={logoHeader} alt="logoweb" height="50" href="/"/></a>
             </div>
             <ul className="nav-menu" id="nav-menu">
+                <li className="nav-links"><a href="/">Home</a></li>
                 <li className="nav-links"><a href="/about">About</a></li>
-                <li className="nav-links"><a href="/contact">Contact</a></li>
-                <li className="nav-links"><a href="/skills">Skills</a></li>
-                <li className="nav-links">
-                    <a  href="/hobby">Hobby</a>
-                </li>
+                <li className="nav-links"><a href="/experience">Experience</a></li>
+                <li className="nav-links"><a  href="/hobby">Hobby</a></li>
             </ul>
             <div class="contact-me nav-links nav-links-btn">
                     <a  href="https://wa.me/6287888254504">Contact Me</a>
@@ -38,14 +36,14 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/about" element={<About/>}/>
-          <Route exact path="/contact" element={<Contact/>}/>
+          <Route exact path="/experience" element={<Experience/>}/>
           <Route exact path="/skills" element={<Skills/>}/>
           <Route exact path="/hobby" element={<Hobby/>}/>
         </Routes>
       </Router>
       <footer className="footer">
         <div className="container-footer">
-            <img src={logoFooter} alt="logo-footer" height="35" />
+            <img src={logoFooter} alt="logo-footer" height="50" />
         </div>
         <div>
           <p className="copyright">©2022 Bagus Nurhuda All rights reserved</p>

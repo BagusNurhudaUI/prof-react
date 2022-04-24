@@ -108,9 +108,9 @@ footer {
 }
 
 .copyright {
-    font-size: 14px;
+    font-size: large;
     position: relative;
     justify-content: center;
     top: 25%;
-    padding: 0 20px 0 ;
+    padding: 0 25px 0 ;
 }
