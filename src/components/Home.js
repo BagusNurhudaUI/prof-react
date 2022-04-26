@@ -10,7 +10,7 @@ var feed = new Instafeed({
 
 function Home() {
     return (
-      <div>
+      <div className='hero'>
         <div className='home-1' >
         <div className='desc-profile'>
               <h1 className='name'>Hi, I'm Bagus</h1>
@@ -21,22 +21,14 @@ function Home() {
               </div>
         </div>
           <div className='foto-prof'>
-            <img src={fotoProfile} alt="foto profile"width={380}/>
+            <img src={fotoProfile} alt="foto profile"width={400}/>
           </div>
 
         </div>
       <div id='instafeed' className='insta'>
-        This is my galery
             {feed.run()}
       </div>
         
-
-<h1>IME (Ikatan Mahasiswa Elektro) merupakan organisasi kemahasiswaan di tingkat Departemen Teknik Elektro yang bertujuan untuk melayani serta memfasilitasi masyarakat elektro, baik dalam bidang akademik maupun nonakademik serta sebagai sarana penyalur aspirasi dan pemersatu mahasiswa dari semua jurusan di dalam Departemen Teknik Elektro UI</h1>
-
-     <h1>IME (Ikatan Mahasiswa Elektro) merupakan organisasi kemahasiswaan di tingkat Departemen Teknik Elektro yang bertujuan untuk melayani serta memfasilitasi masyarakat elektro, baik dalam bidang akademik maupun nonakademik serta sebagai sarana penyalur aspirasi dan pemersatu mahasiswa dari semua jurusan di dalam Departemen Teknik Elektro UI</h1>   
-<h1>IME (Ikatan Mahasiswa Elektro) merupakan organisasi kemahasiswaan di tingkat Departemen Teknik Elektro yang bertujuan untuk melayani serta memfasilitasi masyarakat elektro, baik dalam bidang akademik maupun nonakademik serta sebagai sarana penyalur aspirasi dan pemersatu mahasiswa dari semua jurusan di dalam Departemen Teknik Elektro UI</h1>
-
-<h1>IME (Ikatan Mahasiswa Elektro) merupakan organisasi kemahasiswaan di tingkat Departemen Teknik Elektro yang bertujuan untuk melayani serta memfasilitasi masyarakat elektro, baik dalam bidang akademik maupun nonakademik serta sebagai sarana penyalur aspirasi dan pemersatu mahasiswa dari semua jurusan di dalam Departemen Teknik Elektro UI</h1>
       </div>
 
     )
