@@ -1,6 +1,6 @@
 import React from 'react';
-import './Home.css';
-import fotoProfile from '../../image/foto-profile.png'
+import '../styles/Home.css';
+import fotoProfile from '../image/foto-profile.png'
 import Instafeed from "C:/Users/Bagus/Documents/Bangkit 2022/Belajar/project-react-1/portofolio-web/node_modules/instafeed.js/dist/instafeed.min.js"
 
 var feed = new Instafeed({
@@ -12,23 +12,22 @@ function Home() {
     return (
       <div>
         <div className='home-1' >
-          <div className='foto-prof'>
-            <img src={fotoProfile} alt="foto profile"width={360}/>
-          </div>
-
-          <div className='desc-profile'>
-            <div className='desc-profile-1'>
-              <h1 className='name'>Bagus Nurhuda</h1>
-              <h2 className='univ'>Undergraduate Student <br/>At University of Indonesia</h2>
+        <div className='desc-profile'>
+              <h1 className='name'>Hi, I'm Bagus</h1>
+              <h2 className='univ'>Undergraduate Student At University of Indonesia</h2>
+              <p>I design and code beautifully simple things, and I love what I do.</p>
               <div className='resume'>
                 <a href='https://www.linkedin.com/in/bagusnurhuda/'>My Resume</a>
               </div>
-            </div>
+        </div>
+          <div className='foto-prof'>
+            <img src={fotoProfile} alt="foto profile"width={380}/>
           </div>
+
         </div>
       <div id='instafeed' className='insta'>
+        This is my galery
             {feed.run()}
-        
       </div>
         
 

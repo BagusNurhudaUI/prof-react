@@ -1,37 +1,18 @@
 import './App.css';
-import About from "./components/about/About";
-import Experience from './components/experience/Experience';
+import About from "./components/About";
+import Experience from './components/Experience';
 import Hobby from './components/Hobby';
 import Skills from './components/Skills';
-import Home from './components/home/Home';
-import logoHeader from './image/logo.png'
-import logoFooter from './image/logo-footer.jpg'
+import Home from './components/Home';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes,  Route} from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <header className="header">
-        <nav className="navbar">
-        <div className="logo" id="logo" >
-                <a href='/'><img src={logoHeader} alt="logoweb" height="50" href="/"/></a>
-            </div>
-            <ul className="nav-menu" id="nav-menu">
-                <li className="nav-links"><a href="/">Home</a></li>
-                <li className="nav-links"><a href="/about">About</a></li>
-                <li className="nav-links"><a href="/experience">Experience</a></li>
-                <li className="nav-links"><a  href="/hobby">Hobby</a></li>
-            </ul>
-            <div class="contact-me nav-links nav-links-btn">
-                    <a  href="https://wa.me/6287888254504">Contact Me</a>
-                </div>
-            <div className="menu-toggle" id="menu-toggle">
-                <div className="toggle-line"></div>
-                <div className="toggle-line"></div>
-                <div className="toggle-line"></div>
-            </div>
-        </nav>
-    </header>
+      
+      <Header />
       <Router>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
@@ -41,17 +22,7 @@ function App() {
           <Route exact path="/hobby" element={<Hobby/>}/>
         </Routes>
       </Router>
-      <footer className="footer">
-        <div className="container-footer">
-            <img src={logoFooter} alt="logo-footer" height="50" />
-        </div>
-        <div>
-          <p className="copyright">©2022 Bagus Nurhuda All rights reserved</p>
-        </div>
-          
-        
-        
-    </footer>
+      <Footer />
     </div>
     
   );

@@ -1,0 +1,27 @@
+/* this is for footer*/
+footer {
+    background-color: #21325E;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    padding: 10px;
+   
+}
+
+.container-footer {
+    padding: 0px 20px;
+}
+
+.container-footer img{
+    vertical-align: middle;
+}
+
+.copyright {
+    font-size: large;
+    position: relative;
+    justify-content: center;
+    top: 25%;
+    padding: 0 25px 0 ;
+}
