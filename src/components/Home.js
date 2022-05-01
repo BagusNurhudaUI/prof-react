@@ -4,9 +4,9 @@ import fotoProfile from '../image/foto-profile.png'
 import Instafeed from "C:/Users/Bagus/Documents/Bangkit 2022/Belajar/project-react-1/portofolio-web/node_modules/instafeed.js/dist/instafeed.min.js"
 
 var feed = new Instafeed({
-  limit :9,
+  limit :6,
   clientId : "639245593",
-  accessToken: 'IGQVJYOWZAyTGZAaYmxiX1JtV0s2dkJRbTlhMDNVSzNDbm1MQ1JqQU1jV2NjSUlncFAteTNsWkFDMEZA5TklvenliQlpzN0stRDhCZAEFzWmdhcnQ5VW1LTVpnTHFJVU5UTUE2X3VoTHBIOHhPTm9wZATRKUAZDZD'
+  accessToken: 'IGQVJVbWtSX1Rwa0lvUWVESG02MUp0SFoxaDFvZAGJPM2NWZAnRCNThHLUk1eHVLU0c0ZAmJ6S05LTWhaSXZAfYU1OSHNQN2NXbWZAXYXlQR3RVQXRET0NCeDdWUW1zZA1dBTTE5M0g0R0NoekpMV3F0a19GMgZDZD'
 });
 console.log(feed.run());
 

@@ -78,7 +78,7 @@
   }
   
   .fa-bars {
-    color: #fff;
+    color: #21325E;
   }
   
   .nav-links-mobile {
@@ -89,8 +89,33 @@
     display: none;
   }
 
+  @media screen and (max-width: 999px) {
+    .home-1 {
+      flex-direction: column;
+      padding: 10%;
+    }
+    .desc-profile {
+      padding: 5px;
+    }
+
+    .desc-profile h1, .desc-profile h2, .desc-profile p ,.desc-profile div{
+      text-align: center;
+    } 
+
+    .foto-prof {
+      text-align: center;
+    }
+  }
 
   @media screen and (max-width: 1000px) {
+    .navbar {
+      background-color: #fff;
+    }
+    
+  .resume-header {
+    padding-left: 0;
+  }
+
     .NavbarItems {
       position: relative;
     }
@@ -147,7 +172,7 @@
     }
   
     .fa-times {
-      color: #fff;
+      color: #21325E;
       font-size: 2rem;
     }
   

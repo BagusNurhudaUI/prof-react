@@ -34,9 +34,8 @@ export default function Header(){
 
   console.log(window.innerWidth);
   window.addEventListener('resize', showButton)
-   window.addEventListener('scroll', changeBackground)
-   console.log(click);
-   console.log(setClick);
+  window.addEventListener('scroll', changeBackground)
+ 
     return (
         <>
           <nav className={navbar ? 'header-bg navbar' : 'navbar'}>
