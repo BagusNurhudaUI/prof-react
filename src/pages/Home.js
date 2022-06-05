@@ -10,7 +10,7 @@ export default function Home(){
             <MainPage />
             <About />
             <Projects />
-            <Gallery />
+            <Gallery /> 
             <Contact />
         </div>
         

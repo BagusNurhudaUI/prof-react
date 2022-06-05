@@ -408,7 +408,7 @@ textarea {
         text-align: justify;
     }
     .text-primary {
-      text-align: justify;
+      text-align: start;
       max-width: 90%;
     }
   }
