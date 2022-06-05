@@ -2,10 +2,13 @@
   "name": "portofolio-web",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
     "instafeed": "^1.4.0",
     "instafeed.js": "^2.0.0",
     "querystring-es3": "^0.2.1",

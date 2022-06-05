@@ -10,6 +10,9 @@
       integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="./favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- <meta name="theme-color" content="#000000" /> -->
     <!-- <meta
       name="description"
@@ -17,21 +20,35 @@
     /> -->
     <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
-    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-    <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+    
     <title>Bagus Nurhuda</title>
+    <style type="text/css">
+      #instafeed {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      #instafeed img{
+          width: fit-content;
+          justify-content: space-around;
+          text-align: center;
+          width: 19rem;
+          height: 19rem;
+          border-style: solid;
+          border-color: white;
+          border-bottom: 10px;
+          object-fit: cover;
+          padding: 0.5rem ;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" ></div>
-    
-    <!-- <script type="text/javascript">
-      var feed = new Instafeed({
-          target: "instafeed",
-          accessToken: 'IGQVJYOWZAyTGZAaYmxiX1JtV0s2dkJRbTlhMDNVSzNDbm1MQ1JqQU1jV2NjSUlncFAteTNsWkFDMEZA5TklvenliQlpzN0stRDhCZAEFzWmdhcnQ5VW1LTVpnTHFJVU5UTUE2X3VoTHBIOHhPTm9wZATRKUAZDZD'
-      });
-      feed.run();
-    </script> -->
-
+ 
+    <script src="./index.js"></script>
   </body>
 </html>
