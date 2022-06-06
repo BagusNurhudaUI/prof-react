@@ -28,10 +28,9 @@ export default function Home_Project(){
                 <strong>Audit Kurir</strong> or <strong>"akur"</strong> is an Android application that can divide all tracking information from seller with many orders and want to seperate their shipment delivery.
               </p>
               <a
-                href="/akur"
+                href="/akur" 
                 id="project-akur"
                 className="btn btn--med btn--theme dynamicBgClr btn-11"
-                target="_blank"
                 >Lihat</a
               >
             </div>
@@ -51,10 +50,9 @@ export default function Home_Project(){
                 <strong>Kasbaik by Kitabisa</strong> is an aplication that help Kitabisa Company to downstream their donation from people to someone that need to help. This application also built with <strong>Machine Learning</strong> to improve in data processing such as KTP, and and other data in form. 
               </p>
               <a
-              href="/akur"
+              href="/kasbaik"
                 id="project-kasbaik"
                 className="btn btn--med btn--theme dynamicBgClr btn-11"
-                target="_blank"
                 >Lihat</a
               >
             </div>

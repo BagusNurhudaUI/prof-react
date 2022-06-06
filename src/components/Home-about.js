@@ -16,14 +16,14 @@ export default function About(){
             <div className="about__content-details">
               <p className="about__content-details-para">
                 Hi!! My name is
-                <strong>Bagus Nurhuda</strong>
-                and I'm an <strong> undergraduate student </strong> from <strong>University of Indonesia</strong>. Currently studying about <strong>Computer Engineering</strong> 
+                <strong> Bagus Nurhuda </strong>
+                and I'm an <strong> undergraduate student </strong> from <strong>University of Indonesia</strong>. Currently studying about <strong>Computer Engineering </strong> 
                 and anything about <strong>software development</strong>
               </p>
               <p className="about__content-details-para">
-                I'm interested in <strong>Web Development</strong> including fronted and backend. Sometimes I also learning about <strong> Cloud Computing</strong>
+                I'm interested in <strong>Web Development</strong> including fronted and backend. Sometimes I also learning about <strong> Cloud Computing </strong>
                 and I'm ready to be parts of several companies. Feel free to
-                <strong>contact</strong> me here.
+                <strong> contact</strong> me here.
               </p>
             </div>
             <a href="#contact" className="btn btn--med btn--theme dynamicBgClr"

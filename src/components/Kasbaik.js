@@ -1,16 +1,19 @@
 
 
-export default function Akur (){
+export default function Kasbaik (){
     
+    const alertHandle = function(){
+      alert("This application is still on deployment")
+    }
     return (
         <>
         <section className="project-cs-hero">
     <div className="project-cs-hero__content">
       {/* <div  style={{justifyContent: 'space-between'}}> <img src= {require('../assets/png/akur.png') } width = {300} /></div> */}
-      <h1 className="heading-primary">Audit Kurir</h1>
+      <h1 className="heading-primary">Kasbaik</h1>
       <div className="project-cs-hero__info">
         <p className="text-primary">
-        <strong>Audit Kurir</strong> or <strong>"akur"</strong> is an Android application that can divide all tracking information from seller with many orders and want to seperate their shipment delivery.
+        <strong>Kasbaik by Kitabisa</strong> is an aplication that help Kitabisa Company to downstream their donation from people to someone that need to help. This application also built with <strong>Machine Learning</strong> to improve in data processing such as KTP, and and other data in form.
         </p>
       </div>
       <div className="project-cs-hero__cta">
@@ -25,7 +28,7 @@ export default function Akur (){
       <div className="project-details__content">
         <div className="project-details__showcase-img-cont">
           <img
-            src={ require ('../assets/png/akur.png')}
+            src={ require ('../assets/png/kasbaik.png')}
             alt="Project Image"
             className="project-details__showcase-img"
           />
@@ -34,23 +37,28 @@ export default function Akur (){
           <div className="project-details__desc">
             <h3 className="project-details__content-title">Project Overview</h3>
             <p className="project-details__desc-para">
-            Recently, the e-commerce industry is one of the industries that is very popular in many circles. The existence of e-commerce has changed the principles of shopping that must be done through an offline store. Slowly but surely, everyone has chosen e-commerce as a medium for them to buy and shop anytime and everywhere with many choices of product, brands, and types of delivery. Estimated everyday order in many e-commerce is about millions orders that have been made by buyers to sellers. This is a huge amount and also will affect the simple shop. These million orders have a large variety of types of shipment delivery companies and it can affect sellers because they have to recap the number of orders that must be delivered to more than one shipping company.
+            Kasbaik is a type of microfinance app that runs in loans field and financial help in form of capital to other people who needs with instalment payments based on their ability , no interest and no debt slavery (no riba). So basically Kasbaik will be an easy capital support apps and will not incriminating for those who need. 
+
 
 
             </p>
             <p className="project-details__desc-para">
-            Therefore, we will create a system that will be useful to overcome these problems as a bis solution. We’re building Akur, a Delivery Auditing Service application mobile based program which helps sellers in online shops having trouble to track the amount of packets sent in delivery service everyday. With Akur the seller won’t need to worry about losing a packet in the midst of the delivery process.
+            The list of Main Function from this app :<br></br>
+            1. User : can register / login, create a profile, send request of borrowing, can receive tracking update of loan including status changed , payments and give proof of installment, user satisfied to use this app. <br></br>
+            2. Partner/ Mitra : can register / login, can see all borrower requests include update status of loan, got all information of borrower and last can input all installment from borrower in this app. <br></br>
+            3. Stakeholder from Kitabisa : can see all flow from loans and all database from tabel just to tracking how much loan have been downstream, and how many people have request from every mitra/partner. 
+
             </p>
           </div>
           <div className="project-details__tools-used">
             <h3 className="project-details__content-title">Tools Used</h3>
             <div className="skills">
-              <div className="skills__skill">Java</div>
+              <div className="skills__skill">Kotlin</div>
               <div className="skills__skill">Node JS</div>
               <div className="skills__skill">Express JS</div>
               <div className="skills__skill">PostgreSQL</div>
-              <div className="skills__skill">AWS CLoud</div>
-              <div className="skills__skill">binderbyteAPI</div>
+              <div className="skills__skill">Google CLoud</div>
+              <div className="skills__skill">Python Jupiter Notebook</div>
               <div className="skills__skill">Android Studio</div>
               
             </div>
@@ -58,14 +66,14 @@ export default function Akur (){
           <div className="project-details__links" id='see-live'>
             <h3 className="project-details__content-title">See Live</h3>
             <a
-              href="https://drive.google.com/file/d/1PeuRjgBC_cqdLnhgyu7lMp-FipyIeZkO/view"
+              onClick={alertHandle}
               className="btn btn--med btn--theme project-details__links-btn"
               target="_blank"
             >
               Download APK
             </a>
             <a
-              href="https://github.com/BagusNurhudaUI/akur"
+              href="https://github.com/BagusNurhudaUI/kasbaik"
               className="btn btn--med btn--theme-inv project-details__links-btn"
               target="_blank"
             >

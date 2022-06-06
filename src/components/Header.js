@@ -7,8 +7,9 @@ export default function Header(){
     const [click, setClick] = useState(false)
     const [ navbar, setButton] = useState(true);
     const handleClick = () => {
-      console.log(click);
+      
       setClick(!click)
+      console.log(click);
     }
     
 
@@ -26,17 +27,6 @@ export default function Header(){
      window.location.href = "/"
    }
 
-   const showButton = () => {
-    if (window.innerWidth <= 1000) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  // useEffect(() => {
-  //   showButton();
-  // }, []);
 
   // window.addEventListener('resize', showButton)
   // window.addEventListener('scroll', changeBackground)
@@ -60,20 +50,20 @@ export default function Header(){
               <a href="/" className="header__link"> Home </a>
             </li>
             <li className="header__link-wrapper">
-              <a href="#about" className="header__link">About </a>
+              <a href="/#about" className="header__link">About </a>
             </li>
             <li className="header__link-wrapper">
-              <a href="#projects" className="header__link">
+              <a href="/#projects" className="header__link">
                 Projects
               </a>
             </li>
             <li className="header__link-wrapper">
-              <a href="#gallery" className="header__link">
+              <a href="/#gallery" className="header__link">
                 Gallery
               </a>
             </li>
             <li className="header__link-wrapper">
-              <a href="#contact" className="header__link"> Contact </a>
+              <a href="/#contact" className="header__link"> Contact </a>
             </li>
           </ul>
           <div className="header__main-ham-menu-cont" onClick={handleClick}>
@@ -99,17 +89,17 @@ export default function Header(){
             </li>
 
             <li className="header__sm-menu-link" onClick={closeMobileMenu}>
-              <a href="#about"> About </a>
+              <a href="/#about"> About </a>
             </li>
 
             <li className="header__sm-menu-link" onClick={closeMobileMenu}>
-              <a href="#projects"> Projects </a>
+              <a href="/#projects"> Projects </a>
             </li>
             <li className="header__sm-menu-link" onClick={closeMobileMenu}>
-              <a href="#gallery"> Gallery </a>
+              <a href="/#gallery" target="_blank"> Gallery </a>
             </li>
             <li className="header__sm-menu-link" onClick={closeMobileMenu}>
-              <a href="#contact"> Contact </a>
+              <a href="/#contact"> Contact </a>
             </li>
           </ul>
         </div>

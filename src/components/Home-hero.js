@@ -24,7 +24,7 @@ function Home() {
         </div>
         <div className="home-hero__content2">
           <div className="home-hero__content_image">
-            <input type="image" img src={require('../assets/png/prof.png')} alt="gambar-main" width={300}/>
+            <img src={require('../assets/png/prof.png')} alt="gambar-main" width={300}/>
           </div>
         </div>
       </div>

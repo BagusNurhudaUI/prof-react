@@ -21,7 +21,7 @@ const InstaFeeds = ({...props}) => {
         async function fetchInstagramPost () {
           try{
             axios
-                .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${tokenProp.current}`)
+                .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption,permalink&limit=${props.limit}&access_token=${tokenProp.current}`)
                 .then((resp) => {
                     setFeedsData(resp.data.data)
                 })
@@ -40,11 +40,12 @@ const InstaFeeds = ({...props}) => {
     }, [props.limit])
 
     return (
-        <div className="container">
-            {feeds.map((feed) => (
+        <div className="container" >
+            {feeds.map((feed) => ( 
                 <Feed key={feed.id} feed={feed} />
             ))}
         </div>
+        
     );
 }
 

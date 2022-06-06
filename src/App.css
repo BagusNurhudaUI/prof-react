@@ -399,7 +399,7 @@ textarea {
 
       .home-hero__content2 img {
         width: 300px;
-        
+        display: flex;
       }
 
       .home-hero__info {
@@ -652,6 +652,7 @@ textarea {
     font-size: 1.8rem;
     line-height: 1.7;
     color: grey;
+    text-align: justify;
     margin-bottom: 2rem; }
 
 .project-details__tools-used {
@@ -779,6 +780,10 @@ textarea {
       @media only screen and (max-width: 37.5em) {
         .header__sm-menu--active {
           visibility: visible;
+          opacity: 1; } }
+      @media only screen and (min-width: 37.5em) {
+        .header__sm-menu--active {
+          display: none;
           opacity: 1; } }
   .header__sm-menu-link a {
     display: block;

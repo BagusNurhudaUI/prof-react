@@ -6,11 +6,11 @@ import InstaFeeds from '../components/InstaFeeds'
 export default function Gallery () {
 
     return (
-        <section id="gallery" class="about sec-pad">
-         <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">My Gallery</span>
-          <span class="heading-sec__sub">
+        <section id="gallery" className="about sec-pad">
+         <div className="main-container">
+        <h2 className="heading heading-sec heading-sec__mb-med">
+          <span className="heading-sec__main">My Gallery</span>
+          <span className="heading-sec__sub">
             A several photos of my feeds that have been taken with <strong>wholeheartedly</strong>
           </span>
         </h2>
