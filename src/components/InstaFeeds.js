@@ -8,7 +8,7 @@ import "../styles/instaFeeds.css"
 // token={'IGQVJVbWtSX1Rwa0lvUWVESG02MUp0SFoxaDFvZAGJPM2NWZAnRCNThHLUk1eHVLU0c0ZAmJ6S05LTWhaSXZAfYU1OSHNQN2NXbWZAXYXlQR3RVQXRET0NCeDdWUW1zZA1dBTTE5M0g0R0NoekpMV3F0a19GMgZDZD'} limit={16}
 
 const InstaFeeds = ({...props}) => {
-    const token = 'IGQVJVbWtSX1Rwa0lvUWVESG02MUp0SFoxaDFvZAGJPM2NWZAnRCNThHLUk1eHVLU0c0ZAmJ6S05LTWhaSXZAfYU1OSHNQN2NXbWZAXYXlQR3RVQXRET0NCeDdWUW1zZA1dBTTE5M0g0R0NoekpMV3F0a19GMgZDZD'
+    const token = 'IGQVJWR1VDN3RnSnZALcTNCSXVwOE1qeGdFTHl0M1ZAJd2RDS2RJNDhVd1d0UnphTW4wN3UxTF9SX0VTSGFkSUlud2hqdENZAT0FoV0dCNndwd015aTV3MGc5cndPcDdhRjRRcEt2d2V1djlOR1dDdGk1NgZDZD'
     //beda
     const [feeds, setFeedsData] = useState([]);
     //use useRef to store the latest value of the prop without firing the effect
